@@ -35,5 +35,17 @@ public:
        free(p);
     }
 };
+int main()
+{
+    string name;
+    int price;
+    cout<<"Enter the item details:"<<endl;
+    getline(cin,name);
+    cin>>price;
+    Item* x= new Item(name,price);
+    x->display();
+    delete x;
+    return 0;
+}
 
 
